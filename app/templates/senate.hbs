@@ -1,0 +1,11 @@
+<ul class="list-unstyled list-group">
+{{#each upcomingBill in model}}
+  <li class="list-group-item">
+    <h4>{{upcomingBill.name}}<span class="date"> on {{upcomingBill.legislative_day}}</span></h4>
+    {{upcomingBill.description}}
+    {{upcomingBill.legislative_day}}
+
+  </li>
+{{/each}}
+</ul>
+<h3>Count: {{model.length}}</h3>

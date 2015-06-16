@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="container">
 
-{{outlet}}
+  <nav class='navbar navbar-default' role='navigation'>
+    <ul class='nav navbar-nav'>
+      <li>{{#link-to 'home'}}Home{{/link-to}}</li>
+      <li>{{#link-to 'legislators'}}Legislators{{/link-to}}</li>
+      <li>{{#link-to 'bills'}}Bills{{/link-to}}</li>
+      <li>{{#link-to 'committees'}}Committees{{/link-to}}</li>
+    </ul>
+  </nav>
+
+  {{outlet}}
+
+</div>

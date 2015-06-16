@@ -1,0 +1,23 @@
+<ul class="list-unstyled list-group">
+  {{#each committee in model}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>{{committee.committee_id}}</h4>
+          {{committee.name}}
+          <button {{action "showSubcommittees" committee}}>Show subcommittees</button>
+          <br>
+          {{committee.chamber}}
+        </div>
+        <div class="col-md-6">
+          <ul>
+          {{#each committee.subcommittees}}
+            <li>{{name}}</li>
+          {{/each}}
+          </ul>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+
+</ul>

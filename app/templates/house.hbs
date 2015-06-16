@@ -1,0 +1,9 @@
+<ul class="list-unstyled list-group">
+{{#each upcomingBill in model}}
+  <li class="list-group-item">
+    <h4>{{upcomingBill.name}}</h4>
+    {{upcomingBill.description}}
+  </li>
+{{/each}}
+</ul>
+<h3>Count: {{model.length}}</h3>
